@@ -11,7 +11,7 @@ file.close()
 
 if int(sys.argv[2]):
 	content = onelinePre + content.replace('\n', '[n]').replace('\t', '[t]').replace('    ', '[t]') + onelinePost
-	print('online compressed')
+	print('oneline compressed')
 else:
 	content = content.replace(onelinePre, '').replace('[n]', '\n').replace('[t]', '\t').replace(onelinePost, '')
 	print('oneline uncompressed')
